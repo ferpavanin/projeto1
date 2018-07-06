@@ -9,7 +9,7 @@ package tabelas;
  *
  * @author ferpa
  */
-public class Clientes {
+public class Cliente {
 
     private int idCliente = 0;
     private String razao = "";
