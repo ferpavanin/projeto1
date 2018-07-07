@@ -84,10 +84,11 @@ public class Aplicativo001 extends javax.swing.JFrame {
             return;
         }
 
-        String sql = "select idcliente,razao,cnpjcpf from cliente where idcliente=" + id;
+        String sql = "select idcliente,razao,cnpjcpf from cliente where idcliente=?";
 
         try {
             PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, id);
             ResultSet rs = ps.executeQuery();
             cliente = null;
             while (rs.next()) {
