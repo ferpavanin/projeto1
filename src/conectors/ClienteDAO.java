@@ -33,13 +33,14 @@ public class ClienteDAO {
 
         ps.execute();
         ps.close();
-
+        this.conn.commit();
+        
     }
 
     public static void main(String[] args) throws SQLException {
         ClienteDAO c = new ClienteDAO();
         Cliente tc = new Cliente();
-        tc.setIdCliente(2);
+        tc.setIdCliente(3);
         tc.setCnpjcpf(36393656824l);
         tc.setRazao("FERNANDO PAVANIN2");
         c.Insere(tc);

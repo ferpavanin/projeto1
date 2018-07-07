@@ -35,6 +35,7 @@ public class ConectaDB {
                 JOptionPane.showMessageDialog(null, "Conexão nula");
                 System.exit(0);
             }
+            conn.setAutoCommit(false);
         } catch (SQLException ex) {
             ex.printStackTrace();
             System.exit(0);
