@@ -36,7 +36,9 @@ public class Aplicativo001 extends javax.swing.JFrame {
     private void inicializa() {
 
         try {
-            conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "SYSTEM", "123");
+            conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+                    "SYSTEM",
+                    "123");
         } catch (SQLException ex) {
             ex.printStackTrace();
             System.exit(0);

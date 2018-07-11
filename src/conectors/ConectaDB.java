@@ -18,14 +18,11 @@ public class ConectaDB {
 
     private static Connection conn;
 
-    private static final String sServer = "localhost";
-    private static final String sPorta = "1521";
     private static final String sUsuario = "SYSTEM";
     private static final String sSenha = "123";
-    private static final String sDatabase = "xe";
 
     public static Connection ConectaDB() {
-        String url = "jdbc:oracle:thin:@" + sServer + ":" + sPorta + ":" + sDatabase;
+        String url = "jdbc:oracle:thin:@localhost:1521:xe";
 
         try {
             conn = DriverManager.getConnection(url, sUsuario, sSenha);
