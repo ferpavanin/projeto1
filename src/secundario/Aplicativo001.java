@@ -27,7 +27,7 @@ public class Aplicativo001 extends javax.swing.JFrame {
     /**
      * Creates new form Aplicativo001
      */
-    public Aplicativo001() {
+    public Aplicativo001(){
         initComponents();
         this.setLocationRelativeTo(null);
         inicializa();
@@ -278,7 +278,7 @@ public class Aplicativo001 extends javax.swing.JFrame {
                     .addComponent(BtnConf, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(BtnFim, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(BtnConf1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1);
